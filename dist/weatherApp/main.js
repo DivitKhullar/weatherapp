@@ -285,7 +285,7 @@ var WeatherDataService = /** @class */ (function () {
     function WeatherDataService(http) {
         this.http = http;
         this.apiKey = '4e1a0e349625b71cdcfab5c742777e74';
-        this.url = 'http://api.openweathermap.org/data/2.5/forecast?q=';
+        this.url = 'https://api.openweathermap.org/data/2.5/forecast?q=';
     }
     WeatherDataService.prototype.getWeather = function (city) {
         return this.http.get(this.url + city + '&units=metric&APPID=' + this.apiKey);
